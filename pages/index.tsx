@@ -10,9 +10,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Counter />
-        <Counter />
-        <Counter />
+        <Counter initialValue={0} />
+        <Counter initialValue={2} />
+        <Counter initialValue={'A'} />
       </main>
 
       <footer className={styles.footer}>
