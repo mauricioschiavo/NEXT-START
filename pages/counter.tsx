@@ -13,10 +13,17 @@ export function Counter(props: CounterProps) {
     setContagem(contagem + 1);
   }
 
+  function Remover() {
+    setContagem(contagem - 1);
+  }
+
   return (
     <>
       <p>
-        Counter {contagem} <button onClick={Adicionar}>Adicionar</button>
+        Counter {contagem}
+        <br />
+        <button onClick={Adicionar}>Adicionar</button>
+        <button onClick={Remover}>Remover</button>
       </p>
     </>
   );
